@@ -1,4 +1,4 @@
-# Remote Telguidance
+# Remote Teleguidance
 
 Check project report in Telguidance.pdf for details
 
