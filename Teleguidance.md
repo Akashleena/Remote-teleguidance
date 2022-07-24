@@ -14,3 +14,17 @@ Check project report in Telguidance.pdf for details
 
 ## Short Working Video
 
+Test 1: SSH into tutlebot system from remote desktop
+
+
+
+
+
+
+
+
+
+
+Test 2: Sending intermediate waypoints through mouse clicks
+
+
