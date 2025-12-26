@@ -11,11 +11,11 @@ You're synchronizing 4 topics:
 #### RGB camera info (info_sub_)
 #### Depth camera info (info_depth_sub_)
 
-The ApproximateTime policy handles the reality that these topics arrive at slightly different times. You're using a queue size of 1000, which is huge because it was dealing with bag file playback. We do the same for high-latency sensors.
+The ApproximateTime policy handles the reality that these topics arrive at slightly different times. We're using a queue size of 1000, which is huge because it was dealing with bag file playback. We do the same for high-latency sensors.
 
 ## 2. Camera Model Initialization (line 85)
 ```
-cppimage_geometry::PinholeCameraModel cam_model_;
+image_geometry::PinholeCameraModel cam_model_;
 cam_model_.fromCameraInfo(camDepthInfo);
 ```
 PinholeCameraModel wraps the intrinsic calibration matrix K:
