@@ -6,12 +6,13 @@ typedef message_filters::sync_policies::ApproximateTime
     sensor_msgs::CameraInfo, sensor_msgs::CameraInfo> MyApproxSyncPolicy;
 You're synchronizing 4 topics:
 
-RGB image (image_sub_)
-Depth image (image_depth_sub_)
-RGB camera info (info_sub_)
-Depth camera info (info_depth_sub_)
+#### RGB image (image_sub_)
+#### Depth image (image_depth_sub_)
+#### RGB camera info (info_sub_)
+#### Depth camera info (info_depth_sub_)
 
 The ApproximateTime policy handles the reality that these topics arrive at slightly different times. You're using a queue size of 1000, which is huge because it was dealing with bag file playback. We do the same for high-latency sensors.
+
 ## 2. Camera Model Initialization (line 85)
 ```
 cppimage_geometry::PinholeCameraModel cam_model_;
