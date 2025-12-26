@@ -1,7 +1,7 @@
 This is a ROS node that synchronizes RGB and depth images with their camera calibration info, then uses the pinhole camera model to back-project 2D pixel clicks into 3D camera-frame coordinates. Classic RGB-D SLAM preprocessing pipeline.
 Key Components
 ## 1. Message Synchronization (lines 265-288)
-cpptypedef message_filters::sync_policies::ApproximateTime
+typedef message_filters::sync_policies::ApproximateTime
     sensor_msgs::Image, sensor_msgs::Image, 
     sensor_msgs::CameraInfo, sensor_msgs::CameraInfo> MyApproxSyncPolicy;
 You're synchronizing 4 topics:
