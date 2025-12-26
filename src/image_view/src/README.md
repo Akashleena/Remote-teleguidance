@@ -47,7 +47,7 @@ Then you scale by depth `distval` to get the actual 3D point in camera frame:
 
 P_camera = depth * [x_norm, y_norm, 1]ᵀ
 
-This is the inverse of the perspective projection equation you should have explained in your interview answer:
+This is the inverse of the perspective projection equation:
 Forward: (X, Y, Z) → (u, v) via u = fx·X/Z + cx
 Inverse: (u, v, depth) → (X, Y, Z) via X = depth·(u - cx)/fx
 
